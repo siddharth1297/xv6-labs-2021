@@ -1,0 +1,13 @@
+ugetpid:
+
+
+Print a page table:
+
+Page 0 -> Text and data section (PERM: READ & WRITE & EXECUTE & USER).
+Page 1 -> Guard Page (PERM: READ & WRITE & EXECUTE. As USER is not enabled, so user programs are not able to write).
+Page 2 -> Stack (PERM: READ & WRITE & EXECUTE & USER).
+
+
+TRAMPOLINE -> The last(higher memory) frame (511th of the last page directory of last level) (PERM: READ & EXECUTE).
+TRAPFRAME -> The second last frame (510th of the last page directory of last level) (PERM: READ & WRITE).
+USYSCALL -> The third last frame (509th of the last page directory of last level) (PERM: READ & USER).
