@@ -1,0 +1,23 @@
+1.
+Register a0-a7 and f0-f7 contain arguments to function.
+Register a2 holds 13 in main's call to printf.
+
+2.
+Compiler inlines the code, so there are no place, where the compiler call the function.
+
+3.
+0x630
+
+4.
+0x38
+
+5.
+Output: "HE110 World"
+
+0x00726c64
+
+No
+
+6.
+It prints random. Because it reads whatever present in the register. As register value is not set by the printf line, so it
+reads the old value.
